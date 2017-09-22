@@ -1415,7 +1415,9 @@ body {
   position: relative;
   display: block;
   overflow: hidden;
-  background: #efefef;
+  /*background: #efefef;*/
+  background: rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
 .contactcharacter .contentwrapper {
   width: 1280px;
