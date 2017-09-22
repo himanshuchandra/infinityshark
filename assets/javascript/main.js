@@ -36,10 +36,11 @@ $(document).ready(function() {
         }) ;
     $(window).scroll(function(){
         if($(document).scrollTop()>40){
-            $("#header").addClass("move");
+            $("#header").addClass("move scrollheader");
+            
         }
         else{
-            $("#header").removeClass("move");
+            $("#header").removeClass("move scrollheader");
         }
         
         if($(document).scrollTop()>180){
