@@ -1781,9 +1781,10 @@ textarea {
 }
 
 form {
-  background: rgba(0,95,75,0.7);
+  background: rgba(0,158,223,0.5);
   padding: 20px;
   transition: all 2s ease;
+    font-weight: 900;
 /*    border: 1px solid white;*/
     border-bottom: none;
 }
@@ -1795,8 +1796,9 @@ input[type="text"], input[type="email"], textarea {
   width: 100%;
   border: none;
 /*  background: #8f9c2e;*/
-    background: rgba(0,0,0,0.3);
-  color: #eff3d6;
+    background: rgba(0,0,0,0.6);
+/*  color: #eff3d6;*/
+    color: white;
   letter-spacing: 1px;
     border-left: 2px solid rgba(255,255,255,0.5);
     border-radius: 0;
