@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    
+    <link href='https://fonts.googleapis.com/css?family=Quicksand|Asap:700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
   <div class="boxscroll do-nicescroll4">
@@ -366,6 +367,7 @@
                           <div class="row">
                               <div class="col-sm-7"></div>
                               <div class="col-sm-4">
+<!--
                                   <form action="#">
                                       <input type="text" class="field" placeholder="Name">
                                       <input type="email" class="field" placeholder="Email">
@@ -376,12 +378,63 @@
                                           <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                       </button>
                                    </form>
+-->
                               </div>
                               <div class="col-sm-1"></div>
                           </div>
                               </div>
                       </section>         
-                          
+                          <section class="contactcharacter" id="about">
+  <div class="contentwrapper" id="contact">
+    
+    <div class="character">
+      <div class="body"></div>
+      <div class="arm"></div>
+      <div class="head">
+        <div class="eyes"></div>
+      </div>
+      <div class="mug">
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+      </div>
+      <div class="contactme">
+        <div class="arrow"></div>
+      </div>
+      <div class="thoughts">
+        
+        <div class="abouttype">
+          <p>I am looking for a</p>
+          <br>
+          <div class="imacontainer"><span class="ima"></span></div>
+          <br>
+          <p>Infinity Shark provides me a one stop solution.</p>
+
+          <span class="imawhat">web designer</span>
+          <span class="imawhat">wordpress operator</span>
+          <span class="imawhat">web developer</span>
+          <span class="imawhat">app developer</span>
+        </div>
+
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="contact">
+    <span class="closer"></span>
+    <form>
+      <input class="input name"  name="name" type="text" value="" placeholder="name">
+      <input class="input email" name="email" type="email" value="" placeholder="email">
+      <textarea class="input message" name="message" placeholder="my awesome message!"></textarea>
+      <input name="commit" type="submit" value="submit" class="submit">        
+    </form>
+  </div>
+  
+</section>
                           
                           <footer id="footer">
                            <!--<div class="heading">
@@ -469,7 +522,39 @@
        </div>
     </div>
     <script src="assets/javascript/main.js"></script>
-    
+    <script>
+    var cnt=0, texts=[];
+var $fclick = false;
+
+
+$(".imawhat").each(function() {
+  texts[cnt++]=$(this).text();
+});
+
+function fadeText() {
+  if (cnt>=texts.length) { cnt=0; }
+  $('.ima').html(texts[cnt++]);
+  $('.ima')
+    .fadeIn('fast').animate({opacity: 1.0}, 5000).fadeOut('fast',
+     function() {
+       return fadeText();
+     }
+  );
+}
+
+function toggleForm() {
+  if ($fclick === true) {
+    $(".contact, .head, .arm").toggleClass("active inactive");
+  } else {
+    $(".contact, .head, .arm").addClass("active");
+    $fclick = true;
+  }
+}
+
+$(".contactme, .arrow, .closer, .submit").on("click", toggleForm);
+
+fadeText();
+</script>
     </body>
 </html>
            
