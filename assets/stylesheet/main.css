@@ -62,6 +62,20 @@ h1 {
             position: relative;
             padding: 24px 20px;
             }
+#header ul li span {
+    position: relative;
+    top: 35px;
+    right: 28px;
+    transition: all 0.4s;
+    color: orange;
+    opacity: 0;
+        font-size: 20px;
+}
+
+#header ul li:hover span {
+    opacity: 1;
+    top: 49px;
+}
 #header ul li a:after {
             content: "";
             position: absolute;
@@ -309,7 +323,6 @@ h1 {
     background-position: center;
     background-attachment: fixed;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
     position: relative;
 }
 #section_2{
@@ -815,8 +828,8 @@ button:hover .fa{
 }
 
 #section_4-shadow {
-    background: rgba(0,0,0,0.5);
-    border-top: 1px solid rgba(0,0,0,0.1);
+/*    background: rgba(0,0,0,0.5);*/
+/*    border-top: 1px solid rgba(0,0,0,0.1);*/
 }
 
 #projects {
@@ -965,22 +978,7 @@ h1.heading{
 .btn-facebook , .btn-google-plus , .btn-instagram , .btn-linkedin{transform: translateX(0%) !important;transition: all 0.5s linear;padding-top: 10px;padding-bottom: 10px;}
 .btn-facebook:hover, .btn-google-plus:hover , .btn-instagram:hover, .btn-linkedin:hover{transform: translateX(-50%) !important;}
 
-/* contact form */
-@import url(//fonts.googleapis.com/css?family=Quicksand:400,700);
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  vertical-align: baseline;
-}
 
-body {
-  line-height: 1;
-}
 
 ol, ul {
   list-style: none;
@@ -1004,14 +1002,6 @@ table {
   outline: 0;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
-  display: block;
-}
 
 audio, canvas, picture, progress, video {
   display: inline-block;
@@ -1041,11 +1031,6 @@ textarea {
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-
-body {
-  background-color: #333;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .hidden {
@@ -1098,7 +1083,7 @@ body {
   text-align: center;
   font-size: 12px;
   font-weight: 700;
-  background-color: white;
+  background-color: red;
   opacity: 0;
   transform: translateX(0);
   color: black;
@@ -1383,20 +1368,8 @@ body {
   overflow: hidden;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  background: #333;
-  position: relative;
-  font-family: 'Quicksand', sans-serif;
-}
-
 .ima {
-  font-family: 'Asap', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -1416,7 +1389,10 @@ body {
   display: block;
   overflow: hidden;
   /*background: #efefef;*/
-  background: rgba(0,0,0,0.5);
+  background: url('../images/team.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 .contactcharacter .contentwrapper {
@@ -1516,11 +1492,11 @@ body {
   animation-delay: 1s;
 }
 .contactcharacter .thoughts {
-  width: 751px;
-  height: 390px;
+    width: 751px;
+    height: 390px;
   top: 0px;
   right: 0px;
-  background-position: -321px -459px;
+    background-position: -321px -459px;
   animation: bob 4s ease-in-out infinite alternate;
   transition: all 1s cubic-bezier(0.76, -0.265, 0.195, 1.26);
   transition-property: left, right, top, bottom;
@@ -1529,11 +1505,14 @@ body {
   text-align: center;
   padding: 90px 80px 60px 100px;
 }
+
 .contactcharacter .thoughts .abouttype #ima {
   font-size: 40px;
   text-transform: uppercase;
 }
+
 .contactcharacter .thoughts .abouttype p {
+    font-family: 'open sans', sans-serif;
   font-size: 24px;
   line-height: 1.45em;
 }
@@ -1550,6 +1529,7 @@ body {
   animation: bob 2s ease-in-out infinite alternate;
 }
 .contactcharacter .thoughts .bubble:nth-child(2) {
+    display: none;
   width: 120px;
   height: 116px;
   top: 40px;
@@ -1561,6 +1541,7 @@ body {
 }
 .contactcharacter .thoughts .bubble:nth-child(3) {
   width: 91px;
+    display: none;
   height: 86px;
   top: 80px;
   left: -190px;
@@ -1572,6 +1553,7 @@ body {
 .contactcharacter .thoughts .bubble:nth-child(4) {
   width: 67px;
   height: 65px;
+    display: none;
   top: 120px;
   left: -260px;
   background-position: 0px -474px;
@@ -1799,9 +1781,11 @@ body {
 }
 
 form {
-  background: #b3c33a;
+  background: rgba(0,95,75,0.7);
   padding: 20px;
   transition: all 2s ease;
+/*    border: 1px solid white;*/
+    border-bottom: none;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -1810,12 +1794,17 @@ input[type="text"], input[type="email"], textarea {
   display: block;
   width: 100%;
   border: none;
-  background: #8f9c2e;
+/*  background: #8f9c2e;*/
+    background: rgba(0,0,0,0.3);
   color: #eff3d6;
   letter-spacing: 1px;
+    border-left: 2px solid rgba(255,255,255,0.5);
+    border-radius: 0;
+    font-family: 'open sans', sans-serif;
+  transition: all 0.5s ease;
 }
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-  background: #6b7423;
+    border-left: 3px solid rgba(255,255,255,0.9);
   outline: none;
 }
 
@@ -1838,25 +1827,27 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-  color: #b3c33a;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: #999;
+  letter-spacing: 1px;
 }
 
 input[type="submit"] {
-  background: #8f9c2e;
+  background: rgba(0,0,0,0.4);
   margin-top: 10px;
   border: none;
-  padding: 6.66667px 20px;
+  padding: 10px 30px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: white;
   position: relative;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+  transition: all 0.1s ease;
 }
 input[type="submit"]:hover, input[type="submit"]:focus {
   outline: none;
   transform: translateY(-3px);
-  box-shadow: 0 3px 0 #6b7423;
+  box-shadow: 0 3px 0 orange;
 }
 input[type="submit"]:active {
   transform: translateY(0);

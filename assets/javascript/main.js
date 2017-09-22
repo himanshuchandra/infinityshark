@@ -126,6 +126,6 @@ procard[i].addEventListener("mouseleave", function() {
 }
 
 /* scroll bar */
-$(".do-nicescrol4").niceScroll(".wrap"); 
+//$(".do-nicescrol4").niceScroll(".wrap"); 
 
 
