@@ -776,6 +776,7 @@ button:hover .fa{
     letter-spacing: 0.5px;
 }
 
+#projects>hr,
 #wwd-wrapper hr{
     border: none;
     border-top: 3px solid orange;
@@ -1894,7 +1895,7 @@ input[type="submit"]:active {
      padding: 70px 0;
 }
 
-
+#projects h3,
 .about-shadow>h3 {
     text-align: center;
     font-family: 'roboto slab', sans-serif;
@@ -1903,7 +1904,16 @@ input[type="submit"]:active {
     letter-spacing: 0.5px;
 }
 
+.about-shadow img {
+    float: right;
+    margin-top: -200px;
+    margin-right: 10%;
+    opacity: 0.45;
+}
+
         .para{
+            position: relative;
+            z-index: 2;
 /*           text-align: center;*/
             font-style: normal;
             font-family: 'open sans', Arial, Helvetica, sans-serif;
