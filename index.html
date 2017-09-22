@@ -21,7 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand|Asap:700' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body onresize="chheight()">
   <div class="boxscroll do-nicescroll4">
 <div class="wrap">
 
@@ -532,6 +532,11 @@
         var hheight = (window.innerHeight);
         var par = document.getElementById("particles");
         par.style.height = hheight+"px";
+        
+        function chheight() {
+            var hheight = (window.innerHeight);
+        par.style.height = hheight+"px";
+        }
         
     var cnt=0, texts=[];
 var $fclick = false;
