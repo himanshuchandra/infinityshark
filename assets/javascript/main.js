@@ -41,6 +41,13 @@ $(document).ready(function() {
         else{
             $("#header").removeClass("move");
         }
+        
+        if($(document).scrollTop()>180){
+            $("#scrolltop").addClass("show");
+        }
+        else{
+            $("#scrolltop").removeClass("show");
+        }
     });
     $('.border').click(function(){
             $('.project').fadeIn(1000);
