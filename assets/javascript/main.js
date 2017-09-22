@@ -118,12 +118,14 @@ var proslide = setInterval(function(){
 
 for(i=0;i<6;i++){
 procard[i].addEventListener("mouseleave", function() {
-    console.log("gya");
+   
     proslide = setInterval(function(){
         shift();
     },6000);
 });
 }
 
+/* scroll bar */
+$(".do-nicescrol4").niceScroll(".wrap"); 
 
 
