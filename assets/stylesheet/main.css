@@ -937,6 +937,7 @@ h1.heading{
     margin-top: 15px;
 }
 
+.project-info a,
 #more-pro a {
     text-decoration: none;
     margin: 5px 0;
@@ -1888,16 +1889,29 @@ input[type="submit"]:active {
     display: inline-block !important;
 }
 
- .about{
-          background: rgba(0,0,0,0.89) !important;       
-        }
-        
+ #wwd-wrapper.about{
+          background: rgba(0,0,0,0.89) !important; 
+     padding: 70px 0;
+}
+
+
+.about-shadow>h3 {
+    text-align: center;
+    font-family: 'roboto slab', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
         .para{
-           text-align: center;
+/*           text-align: center;*/
             font-style: normal;
-            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            font-family: 'open sans', Arial, Helvetica, sans-serif;
             color: white;
             line-height: 2;
+            width: 90%;
+            margin: auto;
+            color: #c1c1c1;
         }
         
         .bold{
