@@ -20,7 +20,6 @@ h1 {
             }
 
 #header{
-            animation: head infinte 3s;
             width: 100%;
             position: fixed;
             top:0%;
@@ -28,10 +27,11 @@ h1 {
             z-index: 200;
             background: rgba(0,0,0,0.25);
             border-bottom: 1px solid rgba(255,255,255,0.25);
-            box-shadow: 0 0 13px -2px rgba(0,0,0,0.3), 0 0 8px -2px rgba(0,0,0,0.5);
+            box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3), 0 0 0 1px rgba(0,0,0,0.15);
             }
+
 #header h1{
-            background: rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.3);
             display: inline-block;
             padding: 21px 25px;
             margin: 0;
