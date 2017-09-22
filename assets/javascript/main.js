@@ -128,4 +128,6 @@ procard[i].addEventListener("mouseleave", function() {
 /* scroll bar */
 //$(".do-nicescrol4").niceScroll(".wrap"); 
 
-
+function scrolltop() {
+    $('html, body').animate({ scrollTop: 0 }, 550);
+}
