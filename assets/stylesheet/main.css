@@ -1529,7 +1529,7 @@ textarea {
   animation: bob 2s ease-in-out infinite alternate;
 }
 .contactcharacter .thoughts .bubble:nth-child(2) {
-    display: none;
+/*    display: none;*/
   width: 120px;
   height: 116px;
   top: 40px;
@@ -1541,7 +1541,7 @@ textarea {
 }
 .contactcharacter .thoughts .bubble:nth-child(3) {
   width: 91px;
-    display: none;
+/*    display: none;*/
   height: 86px;
   top: 80px;
   left: -190px;
@@ -1553,7 +1553,7 @@ textarea {
 .contactcharacter .thoughts .bubble:nth-child(4) {
   width: 67px;
   height: 65px;
-    display: none;
+/*    display: none;*/
   top: 120px;
   left: -260px;
   background-position: 0px -474px;
