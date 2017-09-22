@@ -1883,3 +1883,24 @@ input[type="submit"]:active {
 .show{
     display: inline-block !important;
 }
+
+ .about{
+            font-weight: 400;
+    font-style: normal;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+             
+        }
+        
+        .para{
+           text-align: center;
+            font-style: normal;
+            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            color: white;
+            line-height: 2;
+        }
+        
+        .bold{
+            font-weight: 800;
+            text-align: center;
+            color: white;
+        }
