@@ -1885,10 +1885,7 @@ input[type="submit"]:active {
 }
 
  .about{
-            font-weight: 400;
-    font-style: normal;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-             
+          background: rgba(0,0,0,0.89) !important;       
         }
         
         .para{
@@ -1904,3 +1901,7 @@ input[type="submit"]:active {
             text-align: center;
             color: white;
         }
+
+.client{
+    height:65px
+}
