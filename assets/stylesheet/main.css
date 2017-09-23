@@ -804,7 +804,6 @@ button:hover .fa{
     padding: 20px;
     cursor: pointer;
     transform: rotate(70deg);
-    border-left: 4px solid rgba(0,50,85,0.35);
 }
 
 blockquote {
