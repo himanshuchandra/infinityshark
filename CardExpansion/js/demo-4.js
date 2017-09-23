@@ -49,7 +49,9 @@ var demo = (function(window, undefined) {
       cell_size: 90,
       variance: 1,
       stroke_width: 1,
-      x_colors: 'Purples'
+      x_colors : function(x, y) {
+        return '#0F0D0D';
+      }
     }).svg(); // Render as SVG.
 
     _mapPolygons(pattern);

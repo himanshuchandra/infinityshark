@@ -1401,7 +1401,7 @@ textarea {
   display: block;
   overflow: hidden;
   /*background: #efefef;*/
-  background: url('../images/mobile.jpg');
+    background: url('../images/mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1463,7 +1463,7 @@ textarea {
   top: 160px;
   left: 63px;
   background-position: -788px -1246px;
-  animation: blink 10s steps(2) infinite;
+  animation: blink 2.5s steps(1) infinite;
 }
 .contactcharacter .caffeine .eyes {
   animation: blink-fast 1s steps(2) infinite;
