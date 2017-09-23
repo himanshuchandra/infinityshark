@@ -309,7 +309,7 @@ document.onkeydown = e => {
 //for codepen header
 
 document.getElementById("slider_test").addEventListener("mouseenter",function(){
-    clearInterval(slideStore);
+    clearInterval(slideStore); 
 }); 
         
 document.getElementById("slider_test").addEventListener("mouseleave",function(){
