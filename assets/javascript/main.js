@@ -78,41 +78,25 @@ $(document).ready(function() {
 });
 
 var procard = document.getElementsByClassName("project-card");
-active = "left";
-j=0;
+pj=0;
 function shift() {
     var right = document.getElementById("right-arrow");
     var b1 = document.getElementById("project-box-1");
     var b2 = document.getElementById("project-box-2");
-    if(active=="right") {
         setTimeout(function(){
-        b1.style.left = 0;
-        b2.style.left = "100%";
-        },270);
-        active="left";
-//        for(j=3; j<6; j++) {
-//            procard[j].style.opacity = "0";
-//            procard[j].style.transform = "scale(0.3)";
-//        }
-//        for(j=0; j<3; j++) {
-//            procard[j].style.opacity = "1";
-//            procard[j].style.transform = "scale(1)";
-//        }
-    } else {
-        setTimeout(function(){
-        if(j==1){
+        if(pj==1){
         b1.style.left = "-33%";
         b2.style.left = "66%";
-        } else  if(j==2) {
+        } else  if(pj==2) {
         b1.style.left = "-66%";
         b2.style.left = "33%";
-        } else if(j==3) {
+        } else if(pj==3) {
         b1.style.left = "100%";
         b2.style.left = "0";
-        } else if(j==4){
+        } else if(pj==4){
         b2.style.left = "-33%";
         b1.style.left = "66%";
-        } else  if(j==5) {
+        } else  if(pj==5) {
         b2.style.left = "-66%";
         b1.style.left = "33%";
         } else {
@@ -120,7 +104,7 @@ function shift() {
             b1.style.left = "0";
         }            
          },270);
-        if(j==2) {
+        if(pj==2) {
         setTimeout(function(){
             procard[0].style.opacity = "1";
         procard[0].style.transform = "rotate(0deg) scale(1)";
@@ -130,7 +114,7 @@ function shift() {
         procard[2].style.transform = "rotate(0deg) scale(1)";
         },2000);
         }
-         if(j==5) {
+         if(pj==5) {
         setTimeout(function(){
             procard[3].style.opacity = "1";
         procard[3].style.transform = "rotate(0deg) scale(1)";
@@ -141,23 +125,12 @@ function shift() {
         },2000);
         }
 
-//        active="right";
-        procard[j].style.opacity = "0";
-        procard[j].style.transform = "rotate(70deg) scale(0.3)";
-        if(j==5) {
-            j=0;
+        procard[pj].style.opacity = "0";
+        procard[pj].style.transform = "rotate(70deg) scale(0.3)";
+        if(pj==5) {
+            pj=0;
         } else 
-            j++;
-        
-//        for(j=0; j<3; j++) {
-//            procard[j].style.opacity = "0";
-//            procard[j].style.transform = "scale(0.3)";
-//        }
-//        for(j=3; j<6; j++) {
-//            procard[j].style.opacity = "1";
-//            procard[j].style.transform = "scale(1)";
-//        }
-    }
+            pj++;
 }
 
 for(i=0;i<6;i++){
