@@ -804,7 +804,14 @@ button:hover .fa{
     padding: 20px;
     cursor: pointer;
     transform: rotate(70deg);
+    border-left: 4px solid rgba(0,50,85,0.35);
 }
+
+blockquote {
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+}
+
 
 .card-wrapper:hover .card {
     transform: rotate(-45deg);
@@ -1934,6 +1941,9 @@ input[type="submit"]:active {
     height:65px
 }
 
+.client-wrapper {
+    margin-top: 50px;
+}
 
 /*testimonials*/
 
@@ -2174,4 +2184,19 @@ circle {
   .parent {
     margin-left: 1%;
   }
+}
+
+#blink-cursor {
+    position: relative;
+    font-size: 20px;
+    top: 8px;
+    margin-left: -3px;
+    color: rgba(0,150,110,0.9);
+    animation: blink 1.1s infinite;
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    70%{opacity: 0;}
+    100%{opacity: 1;}
 }
