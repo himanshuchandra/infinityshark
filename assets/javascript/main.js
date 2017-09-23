@@ -313,7 +313,7 @@ document.getElementById("slider_test").addEventListener("mouseenter",function(){
 }); 
         
 document.getElementById("slider_test").addEventListener("mouseleave",function(){
-    var slideStore = setInterval(function(){
+     slideStore = setInterval(function(){
    right_eleSlide();
 },6000);
 });           
