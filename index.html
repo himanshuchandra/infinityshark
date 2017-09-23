@@ -637,7 +637,7 @@ We understand the various challenges faced by organisations, so we endeavor to o
         }
         
     var cnt=0, texts=[];
-var $fclick = false;
+    var $fclick = false;
 
 
 $(".imawhat").each(function() {
@@ -648,7 +648,7 @@ function fadeText() {
   if (cnt>=texts.length) { cnt=0; }
   $('.ima').html(texts[cnt++]);
   $('.ima')
-    .fadeIn('fast').animate({opacity: 1.0}, 5000).fadeOut('fast',
+    .fadeIn('fast').animate({opacity: 1.0}, 3000).fadeOut('fast',
      function() {
        return fadeText();
      }
@@ -656,15 +656,18 @@ function fadeText() {
 }
 
 function toggleForm() {
+    console.log($fclick);
   if ($fclick === true) {
     $(".contact, .head, .arm").toggleClass("active inactive");
+      $fclick = false;
   } else {
     $(".contact, .head, .arm").addClass("active");
     $fclick = true;
+      
   }
 }
 
-$(".contactme, .arrow, .closer, .submit").on("click", toggleForm);
+$(".contactme,.closer, .submit").on("click", toggleForm);
 
 fadeText();
 </script>
