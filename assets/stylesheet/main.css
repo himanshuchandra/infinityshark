@@ -742,6 +742,8 @@ button:hover .fa{
 #intro {
     position: absolute;
     top: 220px;
+    left: 0;
+    right: 0;
 }
 
 #intro h1 {
@@ -769,6 +771,8 @@ button:hover .fa{
 }
 
 #wwd-wrapper>h3 {
+    position:  relative;
+    z-index: 2;
     color: #fff;
     font-family: 'Roboto Slab', sans-serif;
     text-align: center;

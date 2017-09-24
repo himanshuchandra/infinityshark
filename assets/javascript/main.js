@@ -321,4 +321,34 @@ document.getElementById("slider_test").addEventListener("mouseleave",function(){
 var slideStore = setInterval(function(){
    right_eleSlide();
 },6000);
-       
+
+var wc = document.getElementById("write-cnt");
+wca = ['Web Development', 'App Development', 'Search Engine Optimization'];
+wci = 1;
+setInterval(function(){
+//    wc.innerHTML = wca[wci];
+//    if(wci==2) { 
+//        wci=0;
+//    } else {
+//        wci++;
+//    }
+    wc.innerHTML="";
+    pp();
+    if(wci==2) {
+        wci=0;
+    } else {
+        wci++;
+    }
+},4000);
+
+function pp() {
+    tempj=0;
+    temp=wca[wci];
+  x =setInterval(function(){
+        wc.innerHTML+=temp[tempj];
+        tempj++;
+     if(tempj==temp.length) {
+         clearInterval(x);
+     }
+    },100);
+}
