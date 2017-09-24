@@ -339,7 +339,7 @@ setInterval(function(){
     } else {
         wci++;
     }
-},4000);
+},4500);
 
 function pp() {
     tempj=0;
@@ -350,5 +350,5 @@ function pp() {
      if(tempj==temp.length) {
          clearInterval(x);
      }
-    },100);
+    },70);
 }
