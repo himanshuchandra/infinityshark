@@ -788,18 +788,21 @@ button:hover .fa{
 }
 
 .card-wrapper {
+    width: 90%;
     transform: rotate(40deg) scale(0.75);
     transition: all 0.5s ease-out;
 }
 
 .card-wrapper:first-child {
-    transform: rotate(-70deg) scale(0.8);
+    transform: rotate(-20deg) scale(0.8);
     transition: all 0.5s ease-out;
 }
 
 .card {
+    position: relative;
+    z-index: 50;
     background: rgba(255,255,255,0.6);
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
     border-radius: 2px;
@@ -807,7 +810,7 @@ button:hover .fa{
     transition: all 0.5s ease-out;
     padding: 20px;
     cursor: pointer;
-    transform: rotate(70deg);
+    transform: rotate(20deg);
 }
 
 blockquote {
@@ -817,13 +820,18 @@ blockquote {
 
 
 .card-wrapper:hover .card {
-    transform: rotate(-45deg);
+    transform: rotate(-30deg);
     background: rgba(255,255,255,0.9);
+}
+
+.card-wrapper:hover .card h3,
+.card-wrapper:hover .card p {
+    color: #333;
 }
 
 .card-wrapper:hover {
     background: #11c7a6;
-    transform: rotate(45deg) scale(1);
+    transform: rotate(30deg) scale(1);
 }
 
 
@@ -833,13 +841,17 @@ blockquote {
 }
 
 .card h3 {
+    color: rgba(0,0,0,0.75);
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #b1b1b1;
+    transition: all 0.8s ease-out;
 }
 
 .card p {
+    color: rgba(0,0,0,0.75);
     text-align: left;
+    transition: all 0.8s ease-out;
 }
 
 #section_4-shadow {
